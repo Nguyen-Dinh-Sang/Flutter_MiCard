@@ -13,33 +13,29 @@ class MyApp extends StatelessWidget {
       home: Scaffold(
         backgroundColor: Colors.teal,
         body: SafeArea(
-          child: Row(
-            mainAxisAlignment: MainAxisAlignment.spaceBetween,
+          child: Column(
             children: [
-              Container(
-                color: Colors.red,
-                width: 100.0,
-                height: double.infinity,
+              CircleAvatar(
+                radius: 50,
+                backgroundImage: AssetImage('images/soi.jpg'),
               ),
-              Column(
-                mainAxisAlignment: MainAxisAlignment.center,
-                children: [
-                  Container(
-                    color: Colors.yellow,
-                    width: 100.0,
-                    height: 100.0,
-                  ),
-                  Container(
-                    color: Colors.lightGreen,
-                    width: 100.0,
-                    height: 100.0,
-                  ),
-                ],
+              Text(
+                'Dinh Sang',
+                style: TextStyle(
+                    fontSize: 40,
+                    color: Colors.white,
+                    fontWeight: FontWeight.bold,
+                    fontFamily: 'Pacifico'),
               ),
-              Container(
-                color: Colors.blue,
-                width: 100.0,
-                height: double.infinity,
+              Text(
+                'MOBILE DEVELOPER',
+                style: TextStyle(
+                  fontFamily: 'SourceSansPro',
+                  color: Colors.teal.shade100,
+                  fontWeight: FontWeight.bold,
+                  fontSize: 20,
+                  letterSpacing: 2.5,
+                ),
               ),
             ],
           ),
