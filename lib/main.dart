@@ -37,6 +37,45 @@ class MyApp extends StatelessWidget {
                   letterSpacing: 2.5,
                 ),
               ),
+              SizedBox(
+                width: 150,
+                height: 20,
+                child: Divider(
+                  color: Colors.teal.shade900,
+                ),
+              ),
+              Card(
+                  color: Colors.white,
+                  margin: EdgeInsets.symmetric(horizontal: 25, vertical: 10),
+                  child: ListTile(
+                    leading: Icon(
+                      Icons.phone,
+                      color: Colors.teal,
+                    ),
+                    title: Text(
+                      '+84345225651',
+                      style: TextStyle(
+                          fontSize: 20,
+                          color: Colors.teal.shade900,
+                          fontFamily: 'SourceSansPro'),
+                    ),
+                  )),
+              Card(
+                  margin: EdgeInsets.symmetric(horizontal: 25, vertical: 10),
+                  color: Colors.white,
+                  child: ListTile(
+                    leading: Icon(
+                      Icons.email,
+                      color: Colors.teal,
+                    ),
+                    title: Text(
+                      'sangnd@ssg.com',
+                      style: TextStyle(
+                          fontSize: 20,
+                          color: Colors.teal.shade900,
+                          fontFamily: 'SourceSansPro'),
+                    ),
+                  )),
             ],
           ),
         ),
